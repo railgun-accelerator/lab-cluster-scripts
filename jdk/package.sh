@@ -31,4 +31,5 @@ function package {
     ln -f -s "$JDK_DEB_FILE" "jdk$VERSION-linux-x64.deb"
 }
 
+package "7"
 package "8"
