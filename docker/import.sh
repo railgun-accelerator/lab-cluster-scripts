@@ -14,7 +14,7 @@ fi
 docker pull "$IMAGE"
 docker tag "$IMAGE" "$HOST/$IMAGE"
 docker push "$HOST/$IMAGE"
-docker rm "$HOST/$IMAGE"
+docker rmi "$HOST/$IMAGE"
 
 if [ "$RM" = "--rm" ]; then
     docker rm "$IMAGE"
