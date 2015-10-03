@@ -1,8 +1,8 @@
-DEFAULT vesamenu.c32
+DEFAULT debian-installer/amd64/boot-screens/vesamenu.c32
 
 LABEL debian8
     MENU LABEL Install Debian 8.2 x86_64
-    KERNEL vesamenu.c32
+    KERNEL debian-installer/amd64/boot-screens/vesamenu.c32
     APPEND debian-installer/amd64/boot-screens/menu.cfg
 
 LABEL debian8_ldap_nfs
