@@ -9,5 +9,10 @@ LABEL debian8
     MENU LABEL Install Debian 8.2 x86_64
     CONFIG debian-installer/amd64/pxelinux.cfg/default
 
+LABEL debian8_ldap_nfs
+    MENU LABEL Install Debian 8.2 x86_64 with LDAP
+    KERNEL debian-installer/amd64/linux
+    APPEND vga=788 initrd=debian-installer/amd64/initrd.gz keymap=us locale=en_US interface=auto domain=peidan.me auto --
+
 PROMPT 1
 TIMEOUT 60
