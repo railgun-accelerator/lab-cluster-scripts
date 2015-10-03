@@ -1,0 +1,13 @@
+DEFAULT local
+UI menu.c32
+
+LABEL local
+    MENU LABEL HardDisk
+    LOCALBOOT 0
+
+LABEL debian8
+    MENU LABEL Install Debian 8.2 x86_64
+    CONFIG debian-installer/amd64/pxelinux.cfg/default
+
+PROMPT 1
+TIMEOUT 60
