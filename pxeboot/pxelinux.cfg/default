@@ -1,12 +1,13 @@
+PATH debian-installer/amd64/boot-screens/
 DEFAULT debian-installer/amd64/boot-screens/vesamenu.c32
 
 LABEL debian8
-    MENU LABEL Install Debian 8.2 x86_64
+    MENU LABEL Install Debian 8.x
     KERNEL debian-installer/amd64/boot-screens/vesamenu.c32
     APPEND debian-installer/amd64/boot-screens/menu.cfg
 
 LABEL debian8_ldap_nfs
-    MENU LABEL Install Debian 8.2 x86_64 with LDAP
+    MENU LABEL Install Debian 8.x with LDAP
     KERNEL debian-installer/amd64/linux
     APPEND vga=788 initrd=debian-installer/amd64/initrd.gz keymap=us locale=en_US interface=auto domain=peidan.me auto --
 
