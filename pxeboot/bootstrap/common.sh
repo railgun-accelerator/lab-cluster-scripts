@@ -3,7 +3,7 @@
 # This file setups the common packages and configurations, including:
 #
 # 0. change the apt sources
-# 1. install packages: sudo, vim, p7zip-full
+# 1. install packages: sudo vim p7zip-full git build-essential
 # 2. change the default shell to /bin/bash
 # 3. change the DNS server to 192.168.64.1
 # 4. install NTP client, and set the NTP server to 192.168.64.1
@@ -23,8 +23,8 @@ EOF
 
 apt-get update
 
-# 1. install packages: sudo, vim, p7zip-full
-apt-get install -y vim p7zip-full sudo
+# 1. install packages: sudo vim p7zip-full git build-essential
+apt-get install -y sudo vim p7zip-full git build-essential
 
 # 2. change the default shell to /bin/bash
 sed -i 's!SHELL=/bin/sh!SHELL=/bin/bash!g' /etc/default/useradd
