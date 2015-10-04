@@ -2,7 +2,7 @@ DEFAULT vesamenu.c32
 TIMEOUT 600
 ONTIMEOUT local
 PROMPT 0
-MENU TITLE PXE Menu
+MENU TITLE Peidan Cluster Network Boot
 NOESCAPE 1
 
 LABEL local
