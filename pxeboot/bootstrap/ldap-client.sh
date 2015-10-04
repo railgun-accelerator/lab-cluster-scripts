@@ -18,4 +18,4 @@ URI     ldaps://ldap.peidan.me
 EOF
 
 # Restart the service (in case this script is called manual after system installation)
-systemctl restart nslcd
+# systemctl restart nslcd
