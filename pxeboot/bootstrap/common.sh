@@ -24,7 +24,7 @@ EOF
 
 apt-get update
 
-# 1. install packages: sudo vim p7zip-full git build-essential
+# 1. install packages
 apt-get install -y sudo vim p7zip-full git build-essential ifenslave
 
 # 2. change the default shell to /bin/bash
