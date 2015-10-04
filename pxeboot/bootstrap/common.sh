@@ -8,6 +8,7 @@
 # 3. change the DNS server to 192.168.64.1
 # 4. install NTP client, and set the NTP server to 192.168.64.1
 # 5. Turn on SSH login for root.
+# 6. Load bonding module at boot time.
 
 # 0. change the apt sources
 cat > /etc/apt/sources.list << EOF
@@ -59,3 +60,6 @@ EOF
 # '/home', which is an NFS directory on Gateway, will disappear.  So it will become hard for a local
 # user, like 'labmaster', to use the servers.  So we allow root to login.
 sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
+
+# 6. Load bonding module at boot time.
+echo "bonding" >> /etc/modules
