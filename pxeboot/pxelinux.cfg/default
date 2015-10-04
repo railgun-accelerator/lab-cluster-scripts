@@ -1,5 +1,9 @@
 DEFAULT vesamenu.c32
 
+LABEL local
+    MENU LABEL Boot From HardDisk
+    LOCALBOOT 0
+
 LABEL debian8
     MENU LABEL Install Debian 8.x
     KERNEL debian-installer/amd64/linux
