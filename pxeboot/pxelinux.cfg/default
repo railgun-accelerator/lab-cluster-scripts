@@ -3,7 +3,6 @@ TIMEOUT 600
 ONTIMEOUT local
 PROMPT 0
 MENU TITLE Peidan Cluster Network Boot
-NOESCAPE 1
 
 LABEL local
     MENU LABEL Boot From HardDisk
