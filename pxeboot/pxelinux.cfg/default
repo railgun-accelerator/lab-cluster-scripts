@@ -6,13 +6,13 @@ LABEL local
 
 LABEL debian8
     MENU LABEL Install Debian 8.x
-    KERNEL debian-installer/amd64/linux
-    APPEND initrd=debian-installer/amd64/initrd.gz auto=true priority=critical preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8.cfg --
+    KERNEL ../../debian-installer/amd64/linux
+    APPEND initrd=../../debian-installer/amd64/initrd.gz auto=true priority=critical preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8.cfg --
 
 LABEL debian8_ldap_nfs
     MENU LABEL Install Debian 8.x with LDAP
-    KERNEL debian-installer/amd64/linux
-    APPEND initrd=debian-installer/amd64/initrd.gz auto=true priority=critical preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8_ldap_nfs.cfg --
+    KERNEL ../../debian-installer/amd64/linux
+    APPEND initrd=../../debian-installer/amd64/initrd.gz auto=true priority=critical preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8_ldap_nfs.cfg --
 
 PROMPT 0
 TIMEOUT 0
