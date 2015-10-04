@@ -2,8 +2,8 @@ DEFAULT vesamenu.c32
 
 LABEL debian8
     MENU LABEL Install Debian 8.x
-    KERNEL debian-installer/amd64/boot-screens/vesamenu.c32
-    APPEND debian-installer/amd64/boot-screens/menu.cfg
+    KERNEL debian-installer/amd64/linux
+    APPEND vga=788 initrd=debian-installer/amd64/initrd.gz preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8.cfg auto --
 
 LABEL debian8_ldap_nfs
     MENU LABEL Install Debian 8.x with LDAP
