@@ -3,7 +3,7 @@
 # This file setups the common packages and configurations, including:
 #
 # 0. change the apt sources
-# 1. install packages: sudo vim p7zip-full git build-essential ifenslave
+# 1. install packages: sudo vim p7zip-full git build-essential ifenslave iperf dnsutils curl
 # 2. change the default shell to /bin/bash
 # 3. change the DNS server to 192.168.64.1
 # 4. install NTP client, and set the NTP server to 192.168.64.1
@@ -26,7 +26,7 @@ EOF
 apt-get update
 
 # 1. install packages
-apt-get install -y sudo vim p7zip-full git build-essential ifenslave
+apt-get install -y sudo vim p7zip-full git build-essential ifenslave iperf dnsutils curl
 
 # 2. change the default shell to /bin/bash
 sed -i 's!SHELL=/bin/sh!SHELL=/bin/bash!g' /etc/default/useradd
