@@ -3,7 +3,7 @@ DEFAULT vesamenu.c32
 LABEL debian8
     MENU LABEL Install Debian 8.x
     KERNEL debian-installer/amd64/linux
-    APPEND vga=788 initrd=debian-installer/amd64/initrd.gz preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8.cfg auto --
+    APPEND vga=788 initrd=debian-installer/amd64/initrd.gz auto url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8.cfg --
 
 LABEL debian8_ldap_nfs
     MENU LABEL Install Debian 8.x with LDAP
