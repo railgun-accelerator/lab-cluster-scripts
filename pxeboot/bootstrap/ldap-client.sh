@@ -16,3 +16,6 @@ cat > /etc/ldap/ldap.conf << EOF
 BASE    dc=ldap,dc=peidan,dc=me
 URI     ldaps://ldap.peidan.me
 EOF
+
+# Restart the service (in case this script is called manual after system installation)
+systemctl restart nslcd
