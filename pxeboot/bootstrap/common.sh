@@ -55,7 +55,7 @@ EOF
 
 # 5. Turn on SSH login for root.
 #
-# Why do we turn on SSH login?  Just in case the Gateway is out of service.  Under that situation,
+# Why do we turn on root login?  Just in case the Gateway is out of service.  Under that situation,
 # '/home', which is an NFS directory on Gateway, will disappear.  So it will become hard for a local
 # user, like 'labmaster', to use the servers.  So we allow root to login.
 sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
