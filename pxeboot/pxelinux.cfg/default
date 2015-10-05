@@ -17,3 +17,8 @@ LABEL debian8_ldap_nfs
     MENU LABEL Install Debian 8.x with LDAP
     KERNEL ../../debian-installer/amd64/linux
     APPEND initrd=../../debian-installer/amd64/initrd.gz auto=true preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8_ldap_nfs.cfg --
+
+LABEL debian8_all_clients
+    MENU LABEL Install Debian 8.x with All Clients
+    KERNEL ../../debian-installer/amd64/linux
+    APPEND initrd=../../debian-installer/amd64/initrd.gz auto=true preseed/url=http://192.168.64.1:8081/git-managed/pxeboot/preseed/debian8_all_clients.cfg --
