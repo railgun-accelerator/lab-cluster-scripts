@@ -64,7 +64,7 @@ EOF
 # red.  It would be a good notice for the operator, that they are using the highest priority in the
 # system.
 sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/g' /etc/ssh/sshd_config
-wget -O /root/.bashrc http://192.168.64.1:8081/pxeboot/resources/bashrc.root
+wget -O /root/.bashrc http://192.168.64.1:8081/git-managed/pxeboot/resources/bashrc.root
 
 # 6. Load bonding module at boot time.
 echo "bonding" >> /etc/modules
