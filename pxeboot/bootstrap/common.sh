@@ -9,6 +9,7 @@
 # 4. install NTP client, and set the NTP server to 192.168.64.1
 # 5. Turn on SSH login for root, and setup a default .bashrc for root user.
 # 6. Load bonding module at boot time.
+# 7. Install docker package.
 
 # 0. change the apt sources
 cat > /etc/apt/sources.list << EOF
@@ -68,3 +69,7 @@ wget -O /root/.bashrc http://192.168.64.1:8081/git-managed/pxeboot/resources/bas
 
 # 6. Load bonding module at boot time.
 echo "bonding" >> /etc/modules
+
+# 7. Install docker package
+apt-get install -y docker.io
+echo 'DOCKER_OPTS="--dns 192.168.64.1 --iptables=false"' >> /etc/default/docker
