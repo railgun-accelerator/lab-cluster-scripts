@@ -1,0 +1,16 @@
+# Chinese web services
+114.114.114.114
+ip.cn
+
+#####################
+# Publication lists #
+#####################
+
+dl.acm.org
+site.ebrary.com
+ieeexplore.ieee.org
+staticieeexplore.ieee.org
+tagxplore.ieee.org
+
+# www.sciencedirect.com, should add to host
+172.230.230.127
