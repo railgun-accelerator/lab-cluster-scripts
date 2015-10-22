@@ -116,7 +116,7 @@ ip -batch - <<EOF
 
 @generate.command()
 @click.option('--gateway', '-G', help='Specify the VPN gateway.',
-              default='10.122.0.2')
+              default='10.123.0.2')
 def vpnroutes(gateway):
     """Generate vpnroutes.sh according to networks given by sys.stdin."""
     networks = filter(lambda s: s, map(str.strip, sys.stdin.read().split('\n')))
